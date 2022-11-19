@@ -1,0 +1,2 @@
+give @p warped_fungus_on_a_stick{Tags:[brush],display:{Name:'[{"text":"Biome Brush","italic":false}]',Lore:['[{"text":"Right click to paint your","italic":false}]','[{"text":"selected biome. Press F to","italic":false}]','[{"text":"open the menu.","italic":false}]']},Enchantments:[{}]} 1
+scoreboard players set @s biomePainter 0

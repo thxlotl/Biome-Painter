@@ -1,0 +1,1 @@
+particle minecraft:end_rod ~ ~1 ~ 2.5 0.1 2.5 0 10 force @a
