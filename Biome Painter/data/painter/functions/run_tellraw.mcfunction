@@ -8,6 +8,6 @@ execute if score @s pageNumPainter matches 6 run function painter:pages/6
 execute if score @s pageNumPainter matches 7 run function painter:pages/7
 execute if score @s pageNumPainter matches 8 run function painter:pages/8
 execute if score @s pageNumPainter matches 9 run function painter:pages/9
-
+execute if score @s pageNumPainter matches 10 run function painter:pages/10
 
 execute if score @s pageNumPainter matches 20 run function painter:pages/20

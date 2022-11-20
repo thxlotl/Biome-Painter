@@ -45,4 +45,8 @@ execute if score @s selectedSwatch matches 43 run fillbiome ~-1.5 ~-1.5 ~-1.5 ~1
 execute if score @s selectedSwatch matches 44 run fillbiome ~-1.5 ~-1.5 ~-1.5 ~1.5 ~1.5 ~1.5 painter:magenta
 execute if score @s selectedSwatch matches 45 run fillbiome ~-1.5 ~-1.5 ~-1.5 ~1.5 ~1.5 ~1.5 painter:pink
 
+execute if score @s selectedSwatch matches 46 run fillbiome ~-1.5 ~-1.5 ~-1.5 ~1.5 ~1.5 ~1.5 painter:white
+execute if score @s selectedSwatch matches 47 run fillbiome ~-1.5 ~-1.5 ~-1.5 ~1.5 ~1.5 ~1.5 painter:gray
+execute if score @s selectedSwatch matches 48 run fillbiome ~-1.5 ~-1.5 ~-1.5 ~1.5 ~1.5 ~1.5 painter:black
+
 playsound minecraft:entity.villager.work_librarian master @s ~ ~ ~ 25 2

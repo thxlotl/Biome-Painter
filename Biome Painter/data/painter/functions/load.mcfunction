@@ -14,3 +14,6 @@ scoreboard objectives add storedPage dummy
 scoreboard objectives add hasSetPage dummy
 
 scoreboard objectives add biomePainter trigger
+
+scoreboard objectives add delayOver dummy
+scoreboard objectives add hasSummoned dummy

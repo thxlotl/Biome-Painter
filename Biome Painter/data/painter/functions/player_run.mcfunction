@@ -1,3 +1,6 @@
+execute unless score @s hasSummoned matches 1 if predicate painter:holding_brush run function painter:summon_stand
+execute unless predicate painter:holding_brush run kill @e[limit=1,sort=nearest,tag=brush]
+execute unless predicate painter:holding_brush run scoreboard players set @s hasSummoned 0
 
 execute unless score @s rightClick matches 1.. run scoreboard players set @s holdingClick 0
 execute if predicate painter:holding_brush if score @s rightClick matches 1.. run scoreboard players set @s holdingClick 1
@@ -12,12 +15,14 @@ execute if score @s brushSize matches 2.. run scoreboard players set @s brushSiz
 #Tellraws
 
     #Loop
-    execute if score @s pageNumPainter matches 10 run scoreboard players set @s pageNumPainter 1
-    execute if score @s pageNumPainter matches 0 run scoreboard players set @s pageNumPainter 9
+    execute if score @s pageNumPainter matches 11 run scoreboard players set @s pageNumPainter 1
+    execute if score @s pageNumPainter matches 0 run scoreboard players set @s pageNumPainter 10
 
-execute unless score @s pageNumPainter = @s storedPage run function painter:run_tellraw
+execute unless score @s pageNumPainter = @s storedPage if score @s delayOver matches 1 run function painter:run_tellraw
 scoreboard players operation @s storedPage = @s pageNumPainter
 
 scoreboard players set @s rightClick 0
 
 execute if score @s biomePainter matches 1.. run function painter:give_brush
+
+execute positioned ~ ~1 ~ run function painter:raycast
